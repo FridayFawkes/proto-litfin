@@ -18,7 +18,7 @@ install-package: $(VENV)
 	$(DEV_PYTHON) -m pip install .
 
 test:
-	$(DEV_PYTHON) test/test_version.py
+	$(DEV_PYTHON) test/test_live002.py
 
 clean-all: build-clean
 	@rm -rf $(VENV)
