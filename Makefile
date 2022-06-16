@@ -17,6 +17,11 @@ build-clean:
 install-package: $(VENV)
 	$(DEV_PYTHON) -m pip install .
 
+test:
+	$(DEV_PYTHON) test/test_version.py
+
 clean-all: build-clean
 	@rm -rf $(VENV)
 	@make $(VENV)
+
+.PHONY: build build-clean install-package test clean-all
