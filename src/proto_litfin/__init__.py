@@ -1,1 +1,1 @@
-from .version import litfin_version, print_inc
+from .litfin import *
